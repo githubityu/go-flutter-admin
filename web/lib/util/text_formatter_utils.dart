@@ -1,5 +1,6 @@
 import 'package:flutter/services.dart';
-
+// Limits input between l and 20
+// inputFormatters[RangeInputFormatter(min: 1, max: 20)]
 class MinMaxValueFormatter extends TextInputFormatter {
   final int minValue;
   final int maxValue;
@@ -8,12 +9,14 @@ class MinMaxValueFormatter extends TextInputFormatter {
 
   @override
   TextEditingValue formatEditUpdate(TextEditingValue oldValue, TextEditingValue newValue) {
-    int? newValueParsed = int.tryParse(newValue.text);
-    if (newValueParsed != null) {
-      if (newValueParsed < minValue || newValueParsed > maxValue) {
-        return oldValue;
-      }
+    if(newValue.text ==''){
+      return newValue;
     }
-    return newValue;
+    final newInt = int.tryParse(newValue.text);
+    if(newInt == null && newInt! < minValue){
+      return const TextEditingValue( ).copyWith(text: minValue.toString());
+    } else {
+      return newInt > maxValue ? oldValue : newValue;
+    }
   }
 }
