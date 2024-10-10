@@ -105,7 +105,6 @@ class _ArticlePageState extends State<ArticlePage> {
                   QueryTitleButtons(
                     query: () {
                       if (_formKey.currentState!.saveAndValidate()) {
-                        "aaaa".log();
                         final searchParams = _formKey.currentState?.value ?? {};
                         if (searchParams["title"] != null ||
                             searchParams["date_range"] != null ||
@@ -233,12 +232,12 @@ class _ArticlePageState extends State<ArticlePage> {
                     );
                   });
                 } else if (e.columnName == "img") {
-                  return Container(
-                    color: Colors.red,
-                    height: 50,
-                    width: 50,
-                    child:
-                        CacheImage(path: ShowUtils.getImageUrlByName(e.value)),
+                  return Center(
+                    child: AspectRatio(
+                      aspectRatio: 1,
+                      child: CacheImage(
+                          path: ShowUtils.getImageUrlByName(e.value)),
+                    ),
                   );
                 }
                 return Center(child: Text("${e.value}"));
