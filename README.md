@@ -84,19 +84,6 @@ swag init
 http://localhost:8888/swagger/index.html
 ```
 
-## 一键安装
-
-Docker Compose 版本需要 V2
-
-```bash
-git clone https://github.com/pddzl/td27-admin
-cd td27-admin
-docker-compose -f docker-compose/docker-compose.yml build
-docker-compose -f docker-compose/docker-compose.yml up -d
-```
-
-浏览器打开 `http://ip:8500`
-
 ## 项目预览图
 
 <table>
