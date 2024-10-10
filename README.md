@@ -31,8 +31,6 @@ admin/123456
 ```bash
 # 配置
 1. 一键安装 .vscode 目录中推荐的插件
-2. node 版本 18+
-3. pnpm 版本 8.x
 
 # 进入项目目录
 cd web
