@@ -113,6 +113,7 @@ http://localhost:8888/swagger/index.html
 
 ## 致谢
 + 项目后端代码 [td27-admin](https://github.com/pddzl/td27-admin)
++ 项目后端代码 [gin-vue-admin](https://github.com/flipped-aurora/gin-vue-admin)
 
 ## 📄 License
 
