@@ -3,7 +3,7 @@
 
 ## 平台简介
 
-* 前端技术栈 TypeScript、Vue3、Element-Plus、Vite、Pinia
+* 前端技术栈 dart、flutter、riverpod
 * 后端技术栈 Golang、Gin、Gorm、MySQL、Redis、Casbin
 
 ## 内置功能
@@ -38,25 +38,16 @@ admin/123456
 cd web
 
 # 安装依赖
-pnpm i
+flutter pub get
 
 # 启动服务
-pnpm dev
-
-# 预览预发布环境
-pnpm preview:stage
-
-# 预览正式环境
-pnpm preview:prod
-
-# 构建预发布环境
-pnpm build:stage
+flutter run -d chrome
 
 # 构建正式环境
-pnpm build:prod
+flutter build web --release 
 
 # 代码格式化
-pnpm lint
+flutter format .
 ```
 
 ### 后端
@@ -110,32 +101,32 @@ docker-compose -f docker-compose/docker-compose.yml up -d
 
 <table>
   <tr>
-    <td><img src="./img/p0.png"/></td>
-    <td><img src="./img/personal.png"/></td>
+    <td><img src="./img/cron.png"/></td>
+    <td><img src="./img/接口管理.png"/></td>
   </tr>
   <tr>
-    <td><img src="./img/p1.png"/></td>
-    <td><img src="./img/p2.png"/></td>
+    <td><img src="./img/接口管理-添加.png"/></td>
+    <td><img src="./img/操作日志.png"/></td>
   </tr>
   <tr>
-    <td><img src="./img/p3.png"/></td>
-    <td><img src="./img/menu-add.png"/></td>
+    <td><img src="./img/文件管理.png"/></td>
+    <td><img src="./img/用户管理-添加.pic.jpg"/></td>
   </tr>
   <tr>
-    <td><img src="./img/p4.png"/></td>
-    <td><img src="./img/p5.png"/></td>
+    <td><img src="./img/用户管理-添加2.pic.jpg"/></td>
+    <td><img src="./img/用户管理-重置密码.png"/></td>
   </tr>
 <tr>
-    <td><img src="./img/p6.png"/></td>
-    <td><img src="./img/file.png"/></td>
+    <td><img src="./img/菜单管理-添加.png"/></td>
+    <td><img src="./img/菜单管理.pic.jpg"/></td>
   </tr>
 </table>
 
 ## 致谢
-+ 项目前端脚手架 [v3-admin-vite](https://github.com/un-pany/v3-admin-vite)
++ 项目后端代码 [td27-admin](https://github.com/pddzl/td27-admin)
 
 ## 📄 License
 
 [MIT](./LICENSE)
 
-Copyright (c) 2022-present [pddzl](https://github.com/pddzl)
+Copyright (c) 2022-present [githubityu](https://github.com/githubityu)
