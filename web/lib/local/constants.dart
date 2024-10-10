@@ -4,8 +4,8 @@ import 'package:flutter/material.dart';
 //http://106.38.204.149:9002/home_api/api/login/signUp?account=18939877709&passWord=11111&code=1234&type=0
 @immutable
 class Constants {
-  static const String rootUrl = 'http://localhost:8080';
-  static const String endpoint = '$rootUrl/api/';
+  static const String rootUrl = 'http://localhost:8888';
+  static const String endpoint = '$rootUrl/';
   // static const String endpoint = rootUrl;
   static const String newsUrl = '${endpoint}homepage/newsShow&id=';
 

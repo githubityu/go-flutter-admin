@@ -161,10 +161,16 @@ class _ArticleEditPageState extends State<ArticleEditPage> {
             )
           ],
         ),
-        PlatformEditorWidget(
-          controller: controller,
-          initialText: model?.content,
-          height: 300,
+        Expanded(
+          child: LayoutBuilder(
+            builder: (context, constraints) {
+              return PlatformEditorWidget(
+                controller: controller,
+                initialText: model?.content,
+                height: constraints.biggest.height,
+              );
+            }
+          ),
         )
       ],
     );
@@ -227,19 +233,17 @@ class _ArticleEditPageState extends State<ArticleEditPage> {
         ),
         child: Padding(
           padding: const EdgeInsets.all(8.0),
-          child: SingleChildScrollView(
-            child: FormBuilder(
-              key: _formKey,
-              child: widget.id == null
-                  ? initWidget()
-                  : Consumer(builder: (context, ref, c) {
-                      return AsyncValueWidget(
-                          ref.watch(getArticleByIdProvider(widget.id!)),
-                          builder: (value) {
-                        return initWidget(model: value);
-                      });
-                    }),
-            ),
+          child: FormBuilder(
+            key: _formKey,
+            child: widget.id == null
+                ? initWidget()
+                : Consumer(builder: (context, ref, c) {
+                    return AsyncValueWidget(
+                        ref.watch(getArticleByIdProvider(widget.id!)),
+                        builder: (value) {
+                      return initWidget(model: value);
+                    });
+                  }),
           ),
         ),
       ),
