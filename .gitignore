@@ -1,25 +1,56 @@
-# If you prefer the allow list template instead of the deny list, see community template:
-# https://github.com/github/gitignore/blob/main/community/Golang/Go.AllowList.gitignore
-#
-# Binaries for programs and plugins
-*.exe
-*.exe~
-*.dll
-*.so
-*.dylib
+.idea/
+/web/node_modules
+/web/dist
 
-# Test binary, built with `go test -c`
-*.test
+.DS_Store
 
-# Output of the go coverage tool, specifically when used with LiteIDE
-*.out
 
-# Dependency directories (remove the comment below to include it)
-# vendor/
 
-# Go workspace file
-go.work
-go.work.sum
 
-# env file
-.env
+
+
+/server/log/
+/server/resource/upload
+
+*.iml
+
+
+# Miscellaneous
+*.class
+*.log
+*.pyc
+*.swp
+.atom/
+.buildlog/
+.history
+.svn/
+migrate_working_dir/
+
+
+
+
+# The .vscode folder contains launch configuration and tasks you configure in
+# VS Code which you may wish to be included in version control, so this line
+# is commented out by default.
+#.vscode/
+
+# Flutter/Dart/Pub related
+/web/.dart_tool/
+/web/.flutter-plugins
+/web/.flutter-plugins-dependencies
+/web/.pub-cache/
+/web/.pub/
+/web/build/
+
+# Symbolication related
+app.*.symbols
+
+# Obfuscation related
+app.*.map.json
+
+# Android Studio will place build artifacts here
+/android/app/debug
+/android/app/profile
+/android/app/release
+
+

@@ -1,0 +1,91 @@
+# jwt configuration
+jwt:
+  signing-key: pddzl
+  expires-time: 86400
+  buffer-time: 43200
+  issuer: pddZl
+
+# zap logger configuration
+zap:
+  level: debug
+  format: console
+  prefix: '[TD27] '
+  director: log
+  show-line: true
+  encode-level: LowercaseColorLevelEncoder
+  stacktrace-key: stacktrace
+  log-in-console: true
+
+# 日志割接
+rotateLogs:
+  max-size: 5
+  max-backups: 7
+  max-age: 7
+  compress: false
+
+# system configuration
+system:
+  env: 'prod' # prod 生产环境、dev 开发环境
+  host: '0.0.0.0'
+  port: 8888
+  stack: true
+
+file:
+  upload: './resource/upload' # 本地上传目录
+
+router:
+  prefix: "" # 全局路由前缀
+
+# mysql configuration
+mysql:
+  host: '127.0.0.1'
+  port: 3306
+  config: 'charset=utf8mb4&parseTime=True&loc=Local'
+  db-name: 'td27'
+  username: 'root'
+  password: '123456'
+  max-idle-conns: 10
+  max-open-conns: 100
+  log-mode: false
+  log-zap: true
+
+# redis configuration
+redis:
+  db: 0
+  host: '127.0.0.1'
+  port: 6379
+  password: ''
+
+# captcha configuration
+captcha:
+  key-long: 6
+  img-width: 240
+  img-height: 80
+
+# 跨域配置
+# 需要配合 server/initialize/router.go#L32 使用
+cors:
+  mode: whitelist # 放行模式: allow-all, 放行全部; whitelist, 白名单模式, 来自白名单内域名的请求添加 cors 头; strict-whitelist 严格白名单模式, 白名单外的请求一律拒绝
+  whitelist:
+    - allow-origin: example1.com
+      allow-headers: content-type
+      allow-methods: GET, POST
+      expose-headers: Content-Length, Access-Control-Allow-Origin, Access-Control-Allow-Headers, Content-Type
+      allow-credentials: true # 布尔值
+    - allow-origin: example2.com
+      allow-headers: content-type
+      allow-methods: GET, POST
+      expose-headers: Content-Length, Access-Control-Allow-Origin, Access-Control-Allow-Headers, Content-Type
+      allow-credentials: true # 布尔值
+
+# crontab; clear table data
+crontab:
+  open: false
+  spec: "@daily"
+  objects:
+    - tableName: base_jwtBlackList
+      compareField: created_at
+      interval: 168h
+    - tableName: monitor_operationLog
+      compareField: created_at
+      interval: 2160h

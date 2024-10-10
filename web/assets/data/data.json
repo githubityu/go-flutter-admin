@@ -1,0 +1,104 @@
+{
+  "country": [
+    {
+      "parentId": 0,
+      "value": "China",
+      "id": 6
+    },
+    {
+      "parentId": 6,
+      "value": "Shanghai",
+      "id": 1007
+    },
+    {
+      "parentId": 1007,
+      "value": "Jiading District",
+      "id": 1008
+    },
+    {
+      "parentId": 1007,
+      "value": "Changning District",
+      "id": 1118
+    },
+    {
+      "parentId": 1007,
+      "value": "Pudong New Area",
+      "id": 1121
+    },
+    {
+      "parentId": 6,
+      "value": "Jiangsu Province",
+      "id": 1009
+    },
+    {
+      "parentId": 1009,
+      "value": "Nanjing",
+      "id": 1010
+    },
+    {
+      "parentId": 1009,
+      "value": "Suzhou",
+      "id": 1011
+    },
+    {
+      "parentId": 1009,
+      "value": "Wuxi",
+      "id": 1012
+    },
+    {
+      "parentId": 6,
+      "value": "Beijing",
+      "id": 1013
+    },
+    {
+      "parentId": 1013,
+      "value": "Chaoyang District",
+      "id": 1162
+    },
+    {
+      "parentId": 1013,
+      "value": "Dongcheng District",
+      "id": 1165
+    },
+    {
+      "parentId": 1,
+      "value": "United States",
+      "id": 101
+    },
+    {
+      "parentId": 101,
+      "value": "New York",
+      "id": 1001
+    },
+    {
+      "parentId": 1001,
+      "value": "Manhattan",
+      "id": 10003
+    },
+    {
+      "parentId": 1001,
+      "value": "Queens",
+      "id": 10004
+    },
+    {
+      "parentId": 1001,
+      "value": "Brooklyn",
+      "id": 10005
+    },
+    {
+      "parentId": 101,
+      "value": "California",
+      "id": 1002
+    },
+    {
+      "parentId": 1002,
+      "value": "Los Angeles",
+      "id": 10006
+    },
+    {
+      "parentId": 1002,
+      "value": "San Francisco",
+      "id": 10007
+    }
+  ]
+}
