@@ -1,5 +1,5 @@
-<h1 align="center" style="margin: 30px 0 30px; font-weight: bold;">TD27 Admin</h1>
-<h4 align="center">基于Gin+Vue3前后端分离的Golang快速开发框架</h4>
+<h1 align="center" style="margin: 30px 0 30px; font-weight: bold;">go-flutter-admin</h1>
+<h4 align="center">基于Gin+flutter前后端分离的Golang快速开发框架</h4>
 
 ## 平台简介
 
