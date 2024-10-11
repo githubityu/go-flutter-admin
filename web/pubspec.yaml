@@ -16,7 +16,7 @@ publish_to: 'none' # Remove this line if you wish to publish to pub.dev
 # https://developer.apple.com/library/archive/documentation/General/Reference/InfoPlistKeyReference/Articles/CoreFoundationKeys.html
 # In Windows, build-name is used as the major, minor, and patch parts
 # of the product and file versions while build-number is used as the build suffix.
-version: 1.0.0+1
+
 
 environment:
   sdk: '>=3.4.3 <4.0.0'
@@ -30,36 +30,36 @@ dependencies:
   cupertino_icons: ^1.0.8
   flutter_layout_grid: ^2.0.7
   pluto_grid: ^8.0.0
-  go_router: ^14.2.2
-  url_launcher: ^6.3.0
+  go_router: ^14.3.0
+  url_launcher: ^6.3.1
   adaptive_navigation: ^0.0.10
   url_strategy: ^0.3.0
   #动画
   flutter_animate: ^4.5.0
   #状态管理
   flutter_hooks: ^0.20.5
-  hooks_riverpod: ^2.5.1
+  hooks_riverpod: ^2.5.2
   riverpod_annotation: ^2.3.5
 
   #网络请求
-  retrofit: ^4.1.0
-  dio: ^5.5.0+1
+  retrofit: ^4.4.1
+  dio: ^5.7.0
   logger: ^2.4.0
   equatable: ^2.0.5
-  flutter_smart_dialog: ^4.9.7+9
+  flutter_smart_dialog: ^4.9.8+3
   ityu_tools:
     git: https://gitee.com/andoridityu/ityu_tools.git
   google_fonts: ^6.2.1
   flex_color_scheme: ^7.3.1
   awesome_dialog: ^3.2.1
-  pointer_interceptor: ^0.10.1+1
-  flutter_form_builder: ^9.4.1
+  pointer_interceptor: ^0.10.1+2
+  flutter_form_builder: ^9.5.0
   form_builder_validators: ^11.0.0
   flutter_multi_formatter: ^2.13.0
   form_builder_file_picker: ^4.2.0
-  syncfusion_flutter_datagrid: ^26.2.13
-#  flutter_expandable_table: ^2.1.0
-#  two_dimensional_scrollables: ^0.3.1
+  syncfusion_flutter_datagrid: ^27.1.52
+  #  flutter_expandable_table: ^2.1.0
+  #  two_dimensional_scrollables: ^0.3.1
   collapsible_sidebar: ^2.0.7
   flutter_json_view: ^1.1.5
   image_picker: ^1.1.2
@@ -67,18 +67,18 @@ dependencies:
   html_editor_enhanced: ^2.6.0
 
 dependency_overrides:
-  meta: ^1.14.0
-  file_picker: ^8.0.7
+  meta: ^1.16.0
+  file_picker: ^8.1.2
 #  flutter_gen: ^5.4.0
 dev_dependencies:
   flutter_test:
     sdk: flutter
   flutter_lints: ^4.0.0
-  build_runner: ^2.4.11
-  go_router_builder: ^2.7.0
-  retrofit_generator: ^8.1.2
+  build_runner: ^2.4.13
+  go_router_builder: ^2.7.1
+  retrofit_generator: ^9.1.2
   json_serializable: ^6.8.0
-  riverpod_generator: ^2.4.2
+  riverpod_generator: ^2.4.3
 #  riverpod_lint: ^2.3.12
 #  flutter_gen_runner: ^5.4.0
 
